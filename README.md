@@ -4,7 +4,7 @@
 I've had the problem that I needed to have stage-specific values in my helm values file for my Prometheus deployment, but also did not want to maintain a huge config file for each cluster. So I had to keep them somewhat flexible.
 So I wanted to have one base values file for all my clusters, but have specific variables changed per cluster.
 
-Specificaly I wanted to add extra labels for every scrape in my config and the labels should be "location", "project" and "stage".
+Specificaly I wanted to add extra labels to every scrape in my config and the labels should be "location", "project" and "stage".
 
 ## My solution: YAML Anchors and cat
 
